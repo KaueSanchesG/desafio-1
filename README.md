@@ -12,8 +12,8 @@ Este projeto faz parte de um dos desafios passados em sala no dia 27/07/2023.
 
 ### O desafio consiste em criar um script que:
 
-* Cadastre uma ou mais pessoas com n endereços.
-* Criar ua lista de pessoas.
+* Cadastre uma ou mais pessoas com any endereços.
+* Criar uma lista de pessoas.
 * Buscar uma pessoa pelo nome e imprimir os dados na tela.
 
 </br>
