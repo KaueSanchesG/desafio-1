@@ -1,23 +1,23 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Funcoes funcoes = new Funcoes();
-        List<Pessoas> pessoas = funcoes.cadastra();
-
-        for (Pessoas pessoa : pessoas) {
-            System.out.println("Nome: " + pessoa.getNome());
-            System.out.println("Idade: " + pessoa.getIdade());
-
-            List<Enderecos> enderecos = pessoa.getEnderecos();
-            System.out.println("Endereços:");
-            for (Enderecos endereco : enderecos) {
-                System.out.println("- Rua: " + endereco.getRua() + ", Número: " + endereco.getNumero());
+        List<Pessoas> pessoas = new ArrayList<>();
+        int opc;
+        do{
+            opc = funcoes.menu();
+            switch(opc){
+                case 1 -> pessoas = funcoes.cadastra();
+                case 2 -> funcoes.procuraPessoas(pessoas);
+                case 3 -> System.out.println("Até uma proxima!!");
+                default -> System.out.println("Opção inválida. Escolha novamente.");
             }
-
-            System.out.println();
-        }
+        }while(opc<3);
     }
 }
+
