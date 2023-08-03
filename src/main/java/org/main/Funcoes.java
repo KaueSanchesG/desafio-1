@@ -23,7 +23,7 @@ public class Funcoes {
             String nome = sc.next();
             System.out.println("Digite a idade da pessoa " + (x+1));
             int idade = sc.nextInt();
-            System.out.println("Quantos endereços a pessoa vai ter? ");
+            System.out.println("Quantos endereços a pessoa vai ter ? ");
             int qntdEnd = sc.nextInt();
             for (int j = 0; j < qntdEnd; j++) {
                 System.out.println("Endereço " + (j + 1));
@@ -54,7 +54,7 @@ public class Funcoes {
                         System.out.println("- Rua: " + endereco.getRua() + ", Número: " + endereco.getNumero() + "\n");
                     }
                 }else {
-                    System.out.println("Não foi possivel encontrar essa pessoa... ❌");
+                    System.out.println("Não foi possivel encontrar essa pessoa!");
                 }
             }
         }
